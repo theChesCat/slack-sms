@@ -1,0 +1,17 @@
+{
+  "name": "slacksms",
+  "version": "1.0.0",
+  "description": "A trivial node server to send SMS from slack.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paloma Sedeau",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "promise": "^7.1.1",
+    "start-stop-daemon": "^0.1.1",
+    "twilio": "^2.10.0"
+  }
+}
