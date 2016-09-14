@@ -6,15 +6,16 @@ const Twilio = require('twilio')
 
 class Main {
     constructor () {
-        Daemon(() => {
+        //Daemon(() => {
             let app = Express()
             app.listen(8765, () => {
                 console.log('App is now turning on port 8765!')
             })
             app.get('/', this.onReceive.bind(this))
-        })
+        //})
 
-        const message = 'this is a test message'
+        /*const message = 'this is a test message'
+        const number = config.twilio.number
 
         const client = Twilio(config.twilio.sid, config.twilio.token)
         client.sendMessage({
@@ -24,7 +25,7 @@ class Main {
         }, (err, resp) => {
             console.log(err)
             console.log(resp)
-        })
+        })*/
     }
 
     onReceive (request, response) {

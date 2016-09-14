@@ -13,5 +13,14 @@
     "promise": "^7.1.1",
     "start-stop-daemon": "^0.1.1",
     "twilio": "^2.10.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theChesCat/slack-sms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theChesCat/slack-sms/issues"
+  },
+  "homepage": "https://github.com/theChesCat/slack-sms#readme"
 }
