@@ -4,8 +4,6 @@ const Promise = require('promise')
 const Twilio = require('twilio')
 const Emoji = require('emoji-codex')
 
-const config = require('./config.js')
-
 class Main {
     constructor () {
         Daemon(() => {
@@ -33,7 +31,6 @@ class Main {
             (data) => {
                 this.handleSuccess(response, data)
             }, (error) => {
-                console.log(error)
                 response.end(error)
             }
         )
